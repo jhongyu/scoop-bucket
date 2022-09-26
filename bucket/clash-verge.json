@@ -11,6 +11,7 @@
             "Clash Verge"
         ]
     ],
+    "pre_uninstall": "Start-Process \"$dir\\resources\\uninstall-service.exe\" -Verb runAs -Wait | Out-Null",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/zzzgydi/clash-verge/releases/download/v$version/Clash.Verge_$version_x64_portable.zip"
